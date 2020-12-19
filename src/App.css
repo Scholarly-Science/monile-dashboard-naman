@@ -1,38 +1,198 @@
-.App {
-  text-align: center;
+.app, button {
+    font-family: 'Inter', sans-serif !important;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+@media (max-width: 414px) {
+    .home {
+        background-color: #fefaef;
+    }
+
+    .home__container {
+        max-width: 95%;
+        margin: auto;
+    }
+
+    .home__navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 10px;
+    }
+
+    .home__navIcon {
+        margin-left: 13px;
+        background-color: transparent;
+        outline: none;
+        border: none;
+    }
+
+    .home__assignments {
+        background-color: #482ca5;
+        display: flex;
+        box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.03);
+        border-radius: 20px;
+        width: 357px;
+        height: 184px;
+        margin: auto;
+    }
+
+    .home__assignments > div {
+        padding: 15px;
+        padding-top: 20px;
+        padding-right: 0px;
+        color: #fff;
+    }
+
+    .home__assignments > div > p {
+        font-weight: bold;
+        letter-spacing: 0.5px;
+        font-size: 15px;
+        line-height: 18px;
+        margin-bottom: 40px;
+    }
+
+    .home__assignments > div > h3 {
+        font-style: normal;
+        font-weight: bold;
+        font-size: 17px;
+        line-height: 21px;
+    }
+
+    .home__assignments > div > button {
+        border: none;
+        outline: none;
+        background-color: #fff;
+        margin-top: 13px;
+        padding: 10px 15px;
+        font-weight: bold;
+        border-radius: 10px;
+    }
+
+    .home__assignments > img {
+        margin-top: -23px;
+        margin-right: 15px;
+    }
+
+    .home__Cards {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        box-sizing: border-box;
+        width: 92%;
+        margin: 20px auto;
+        grid-gap: 15px 23.5px;
+    }
+    
+    .home__companies, .home__jobs, .home__referals, .home__interviews {
+        height: 150px;
+        width: 167px;
+        border-radius: 13px;
+        box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.03);
+    }
+    
+    .home__companies {
+        background: #FD8344;
+        color: #fff;
+
+    }
+    
+    .home__jobs, .home__referals {
+        background: #FFF;
+    }
+
+    .home__interviews {
+        color: #fff;
+        background: #03D3D7;;
+    }
+
+    .home__companies > h2, .home__jobs > h2, .home__referals > h2, .home__interviews > h2 {
+        padding: 15px;
+        padding-bottom: 0px;
+        font-weight: bold;
+        font-size: 15px;
+        line-height: 18px;
+        margin-bottom: 10px;
+    }
+
+    .home__companies > p {
+        font-weight: bold;
+        padding: 15px;
+        padding-bottom: 7px;
+        font-size: 22px;
+        line-height: 27px;
+    }
+
+    .home__companies > img {
+        margin-left: 15px;
+    }
+
+    .home__placements {
+        width: 92%;
+        margin: auto;        
+        height: 195px;
+        background: #FFFFFF;
+        box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.03);
+        border-radius: 17px;
+    }
+
+    .home__placements > h3 {
+        padding: 20px;
+        padding-bottom: 0px;
+        font-weight: bold;
+        font-size: 20px;
+        line-height: 24px;
+        margin-bottom: 10px;
+    }
+
+    .home__placements > p {
+        padding: 0px 20px;
+        margin-bottom: 5px;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 18px;
+    }
+
+    .home__placements > img {
+        width: 89%;
+        display: block;
+        margin: auto;
+        height: 30px;
+    }
+
+    .home__placements > button {
+        border: none;
+        outline: none;
+        background-color: #482ca5;
+        color: #fff;
+        border-radius: 9px;
+        margin-bottom: 5px;
+        width: 95px;
+        height: 35px;
+        margin-top: 20px;
+        margin-left: 20px;
+    }
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+@media (max-width: 375px) {
+    .home__assignments {
+        width: 340px;
+    }
+
+    .home__Cards {
+        width: 96%;
+    }
+
+    .home__companies, .home__jobs, .home__referals, .home__interviews {
+        width: auto;
+        height: 145px;
+    }
+
+    .home__placements {
+        width: 97%;
+    }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+@media (max-width: 360px) {
+    .home__assignments {
+        width: 330px;
+    }
 }
